@@ -8,8 +8,16 @@ const TOOL_ID  = 'erp_framework';
 const API_BASE = import.meta.env.VITE_API_URL || '';
 
 export default function App() {
-  const [dlCount,   setDlCount]   = useState(null);   // null = loading
+  const [dlCount,   setDlCount]   = useState(null);
   const [recording, setRecording] = useState(false);
+  const [theme, setTheme] = useState(() => localStorage.getItem('qg-theme') || 'dark');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('qg-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark');
 
   // Fetch current count on mount
   useEffect(() => {
@@ -57,6 +65,9 @@ export default function App() {
           <div className="header-bottom-row">
             <p className="header-exhibit">{meta.exhibit}</p>
             <div className="download-wrap">
+              <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+                {theme === 'dark' ? '☀ Light' : '◑ Dark'}
+              </button>
               <a
                 className="download-btn"
                 href="/Exhibit_19_V2_ERP_Implementation_Framework.docx"
