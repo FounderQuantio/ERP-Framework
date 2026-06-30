@@ -4,7 +4,7 @@ export const meta = {
   fullTitle: "Enterprise Resource Planning Implementation Manual",
   exhibit: "Exhibit 19  ·  Version 2  ·  Muhammad Bilal, FCA · FCCA · CFA  ·  June 2026",
   footer:
-    "Exhibit 19  |  Version 2  ·  ERP Implementation Framework for Grant Financial Management  ·  Muhammad Bilal, FCA · FCCA · CFA  ·  OMB 2 CFR Part 200  ·  GAO Green Book  ·  EB-2 National Interest Waiver Petition  ·  Confidential",
+    "ERP Implementation Framework for Grant Financial Management · OMB 2 CFR Part 200 · GAO Green Book · Confidential",
 };
 
 export const quickRef = [

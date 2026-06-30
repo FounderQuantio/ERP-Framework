@@ -56,14 +56,12 @@ export default function App() {
 
       <header className="site-header">
         <div className="header-inner">
-          <div className="header-badge">Exhibit 19 · EB-2 NIW Petition</div>
           <h1 className="header-title">
             {meta.title}&nbsp;·&nbsp;<span>{meta.subtitle}</span>
           </h1>
           <p className="header-subtitle">{meta.fullTitle}</p>
           <div className="header-divider" />
           <div className="header-bottom-row">
-            <p className="header-exhibit">{meta.exhibit}</p>
             <div className="download-wrap">
               <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
                 {theme === 'dark' ? '☀ Light' : '◑ Dark'}
