@@ -283,6 +283,7 @@ section { margin-top: 40px; }
 .content-ul li::before { content: '▸'; color: var(--qg-gold); font-size: 11px; padding-top: 3px; }
 .content-ul li b { color: var(--qg-gold); font-weight: var(--qg-weight-bold); white-space: nowrap; }
 .content-ul li span { min-width: 0; text-align: justify; }
+.content-ul .bullet-text-full { grid-column: 2 / -1; text-align: justify; min-width: 0; }
 
 /* COST TABLE */
 .cost-table {
