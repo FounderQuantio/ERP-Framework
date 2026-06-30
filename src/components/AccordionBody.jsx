@@ -9,7 +9,7 @@ export default function AccordionBody({ item }) {
       <div className="acc-content">
         <p className="content-p">{item.detail}</p>
         <BulletList items={item.bullets} />
-        <div className="content-callout">{item.callout}</div>
+        <div className="content-callout"><strong>The bottom line:</strong> {item.callout}</div>
       </div>
     );
   }
