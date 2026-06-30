@@ -40,7 +40,7 @@ The framework is organized around four essential resources:`,
       },
     ],
     callout:
-      'Plain-language summary: This framework answers the question that every organization receiving a federal grant eventually faces: "We have accounting software — but how do we configure it so we are actually following all the federal rules?" That question has no free, comprehensive answer anywhere in the public domain. This framework provides one.',
+      'The bottom line: This framework answers the question that every organization receiving a federal grant eventually faces: "We have accounting software — but how do we configure it so we are actually following all the federal rules?" That question has no free, comprehensive answer anywhere in the public domain. This framework provides one.',
   },
   {
     id: "who",
@@ -61,7 +61,7 @@ The framework is organized around four essential resources:`,
           "Federal program officers at agencies such as HHS, HUD, NIH, NSF, and the Department of Education who oversee their grantees' financial management practices.",
         ],
         callout:
-          "This framework is designed for organizations that currently manage grant finances using spreadsheets, disconnected records, or accounting software that was never set up with federal grant rules in mind.",
+          "The bottom line: This framework is designed for organizations that currently manage grant finances using spreadsheets, disconnected records, or accounting software that was never set up with federal grant rules in mind.",
       },
       {
         title: "b)  Beneficiaries — Who Benefits Even Without Using the Framework Directly",
