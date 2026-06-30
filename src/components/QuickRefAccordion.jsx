@@ -1,17 +1,26 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import AccordionBody from './AccordionBody';
 
 export default function QuickRefAccordion({ items }) {
   const [open, setOpen] = useState(null);
+  const refs = useRef({});
 
-  const toggle = (id) => setOpen(prev => (prev === id ? null : id));
+  const toggle = (id) => {
+    const opening = open !== id;
+    setOpen(opening ? id : null);
+    if (opening) {
+      setTimeout(() => {
+        refs.current[id]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 50);
+    }
+  };
 
   return (
     <div className="accordion">
       {items.map((item) => {
         const isOpen = open === item.id;
         return (
-          <div key={item.id} className={`acc-item${isOpen ? ' open' : ''}`}>
+          <div key={item.id} ref={el => refs.current[item.id] = el} className={`acc-item${isOpen ? ' open' : ''}`}>
             <button
               className="acc-trigger"
               onClick={() => toggle(item.id)}
