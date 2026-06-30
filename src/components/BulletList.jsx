@@ -7,7 +7,7 @@ export default function BulletList({ items }) {
             item
           ) : (
             <>
-              <b>{item.label}</b>&nbsp;{item.text}
+              <b>{item.label}</b><span>{item.text}</span>
             </>
           )}
         </li>
