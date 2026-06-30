@@ -10,7 +10,7 @@ export default function QuickRefAccordion({ items }) {
     setOpen(opening ? id : null);
     if (opening) {
       requestAnimationFrame(() => {
-        refs.current[id]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        refs.current[id]?.scrollIntoView({ behavior: 'instant', block: 'start' });
       });
     }
   };
