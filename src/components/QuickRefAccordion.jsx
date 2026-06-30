@@ -11,7 +11,7 @@ export default function QuickRefAccordion({ items }) {
     if (opening) {
       setTimeout(() => {
         refs.current[id]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 50);
+      }, 350);
     }
   };
 
