@@ -116,7 +116,7 @@ The framework is organized around four essential resources:`,
     short:
       "The framework is a self-contained implementation manual. Begin with Phase 1, follow Phases 2–5 in sequence, run the 87-item checklist before go-live, and validate with the 210 test scripts.",
     detail:
-      "No software purchase is required to begin. Your finance team, ERP consultant, or compliance officer can follow the steps in Section 4 using any standard accounting software your organization already uses. The framework is a self-contained document that guides you through every step.",
+      "No software purchase is required to begin. Your finance team, ERP consultant, or compliance officer can follow the steps in Section 4 using any standard accounting software your organization already uses. This framework is a self-contained document that guides you through every step.",
     phases: [
       { phase: "Phase 1", title: "Pre-Award Design", desc: "Design your chart of accounts and financial structure before the grant arrives." },
       { phase: "Phase 2", title: "Award Configuration", desc: "Configure internal controls and approval workflows when the award is signed." },
