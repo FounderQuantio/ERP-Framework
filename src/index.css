@@ -281,7 +281,7 @@ section { margin-top: 40px; }
 .content-ul li { display: flex; gap: 10px; font-size: 14px; color: var(--qg-text-2); line-height: 1.65; }
 .content-ul li::before { content: '▸'; color: var(--qg-gold); flex-shrink: 0; margin-top: 3px; font-size: 11px; }
 .content-ul li b { color: var(--qg-gold); font-weight: var(--qg-weight-bold); flex-shrink: 0; }
-.content-ul li span { flex: 1; text-align: justify; }
+.content-ul li span { display: block; flex: 1; min-width: 0; text-align: justify; }
 
 /* COST TABLE */
 .cost-table {
