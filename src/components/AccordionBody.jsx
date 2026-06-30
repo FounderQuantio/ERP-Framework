@@ -22,9 +22,13 @@ export default function AccordionBody({ item }) {
           <div key={i}>
             <p className="content-sub">{sub.title}</p>
             <BulletList items={sub.bullets} />
-            {sub.callout && <div className="content-callout">{sub.callout}</div>}
           </div>
         ))}
+        {item.subsections.some(s => s.callout) && (
+          <div className="content-callout">
+            <strong>The bottom line:</strong> {item.subsections.find(s => s.callout)?.callout}
+          </div>
+        )}
       </div>
     );
   }
