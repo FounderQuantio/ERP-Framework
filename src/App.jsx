@@ -74,7 +74,7 @@ export default function App() {
                 download="Exhibit_19_V2_ERP_Implementation_Framework.docx"
                 onClick={handleDownload}
               >
-                ⬇ Download Full Exhibit (.docx)
+                ⬇ Download Full Framework (.docx)
               </a>
               {dlCount !== null && (
                 <span className="download-count">
